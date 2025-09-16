@@ -45,7 +45,7 @@ CREATE TABLE CadastroPecas (
 	ID INT PRIMARY KEY AUTO_INCREMENT,
     Codigo INT NOT NULL,
     NomePeca VARCHAR (255) NOT NULL,
-    Fabricante VARCHAR (255)
+    Fabricante VARCHAR (255) NOT NULL
 );
 
 CREATE TABLE PecasManutencao (
@@ -134,5 +134,3 @@ SELECT * FROM CadastroPecas;
 SELECT * FROM PecasManutencao;
 SELECT * FROM LaudoTecnico;
 SELECT * FROM LaudoManutencao;
-
-		
