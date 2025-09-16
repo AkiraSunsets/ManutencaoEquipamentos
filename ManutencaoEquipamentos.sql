@@ -10,12 +10,12 @@ CREATE TABLE Equipamento (
 CREATE TABLE Manutencao (
 	ID INT PRIMARY KEY AUTO_INCREMENT,
     Tipo VARCHAR (255) NOT NULL,
-    Data DATE,
+    Data DATE NOT NULL,
     Status VARCHAR (255) NOT NULL,
     Resultado VARCHAR (255),
     ProximaData DATE,
     PecasUsadas VARCHAR (255) NOT NULL,
-    QuantidadePecas VARCHAR (255) NOT NULL
+    QuantidadePecas INT NOT NULL
 );
 
 CREATE TABLE EquipamentoManutencao (
@@ -134,3 +134,5 @@ SELECT * FROM CadastroPecas;
 SELECT * FROM PecasManutencao;
 SELECT * FROM LaudoTecnico;
 SELECT * FROM LaudoManutencao;
+
+		
